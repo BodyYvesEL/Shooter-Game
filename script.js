@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = 800;
-    canvas.height = 500;
+    canvas.height = 700;
 
     class InputHandler {
         constructor(game) {
@@ -210,7 +210,7 @@ window.addEventListener('load', function() {
             this.score = 0;
             this.winningScore = 10;
             this.gameTime = 0;
-            this.timeLimit = 5000;
+            this.timeLimit = 30000;
         }
         update(deltaTime) {
             if (!this.gameOver) this.gameTime += deltaTime;
