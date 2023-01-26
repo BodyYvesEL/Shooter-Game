@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <title>Js Game</title>
 </head>
-<body>   
-    <canvas id="canvas1"></canvas>
 
-    <!--CHARACTERS-->
+<body>
+  <div class="loading">loding please wait....</div>
+  <canvas id="canvas1"> </canvas>
+  <!-- characters -->
+  <img id="player" src="assets/player.png" />
+  <img id="BadBat" src="assets/BadBat.png" />
+  <img id="Bubblehead" src="assets/Bubblehead.png" />
 
-    <!--PROPS-->
-    <image id="projectile" src="assets/projectile.png">
-    <image id="smokyExplosion" src="assets/smokeExplosion.png">
-    <image id="fireExplosion" src="assets/fireExplosion.png">
-    <image id="fireball" src="assets/fireball.png">
-    <image id="gears" src="assets/gears.png">
+  <img id="Badbeetle" src="assets/Badbeetle.png" />
+  <img id="monster" src="assets/monster.png" />
+  <img id="Stalkerbee" src="assets/Stalkerbee.png" />
+  <img id="Laserspider" src="assets/Laserspider.png" />
 
+  <!-- props -->
+  <img id="smokeExplosion" src="assets/smokeExplosion.png" />
+  <img id="fireExplosion" src="assets/fireExplosion.png" />
+  <img id="shield" src="assets/shield.png" />
+  <img id="fireball" src="assets/fireball.png" />
+  <img id="playerprojectiles" src="assets/playerprojectiles.png" />
 
-    <!--ENVIRONMENT-->
-    <img id="layer1" src="assets/layer1.png">
-    <img id="layer2" src="assets/layer2.png">
-    <img id="layer3" src="assets/layer3.png">
-    <img id="layer4" src="assets/layer4.png">
+  <!-- environment -->
+  <img id="grass" src="assets/grass.png" />
+  <img id="ground" src="assets/ground.png" />
+  <img id="cloud" src="assets/clouds.png" />
+  <img id="islands" src="assets/islands.png" />
+  <img id="background" src="assets/background.jpeg" />
 
-    <!--SOUNDS-->
-    <audio>rflklkrklsslö </audio>
+  <!-- sounds -->
+  <audio id="explosion" src="assets/explosion.wav"></audio>
+  <audio id="shot" src="assets/shot.wav"></audio>
+  <audio id="hit" src="assets/hit.wav"></audio>
+  <audio id="shieldSound" src="assets/shield.wav"></audio>
 
-    <div id="game-position">
-        <button id="start-button">Start</button>
-        <button id="stop-button">Stop</button>
-        <button id="restart-button">Restart</button>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script type="module" src="script/script.js"></script>
 </body>
+
 </html>

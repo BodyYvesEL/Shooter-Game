@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px !important;
+}
+
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: "Bangers", cursive;
+}
+
+#layer1,
+#layer2,
+#layer4,
+#player,
+#BadBat,
+#Bubblehead,
+#lucky,
+#projectile,
+#gears,
+#hivewhale,
+#drone,
+#smokeExplosion,
+#fireExplosion,
+#Badbeetle,
+#monster,
+#shield,
+#Stalkerbee,
+#Laserspider,
+#islands,
+#cloud,
+#ground,
+#grass,
+#background,
+#fireball,
+#playerprojectiles {
+  display: none;
+}
+
+.loading {
+  font-family: "Bangers", serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  color: black;
+  z-index: 100;
+}
