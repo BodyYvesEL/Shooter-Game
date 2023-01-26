@@ -1,8 +1,8 @@
 const StartScreen = (context, gameobj) => {
     if (gameobj.game.start === false) {
         context.textAlign = 'center';
-        let message1 = 'Welcom Explorer!';
-        let message2 = 'start your new adventure';
+        let message1 = 'Welcome Explorer!';
+        let message2 = 'Start A New Adventure';
 
         context.font = '70px ' + gameobj.game.ui.fontFamily;
         context.fillText(message1, gameobj.game.width * 0.5, gameobj.game.height * 0.5 - 20);
@@ -62,8 +62,8 @@ const GameOverScreen = (context, gameobj) => {
         context.textAlign = 'center';
         let message1;
         let message2;
-        message1 = 'Blazes!';
-        message2 = 'Game Ended';
+        message1 = 'Loser!';
+        message2 = 'Game Ended. Keep Being Mad';
         context.font = '70px ' + gameobj.game.ui.fontFamily;
 
         context.fillText(message1, gameobj.game.width * 0.5, gameobj.game.height * 0.5 - 20);
@@ -90,7 +90,7 @@ const WinnerScreen = (context, gameobj) => {
         let message1;
         let message2;
         message1 = 'Hooray!';
-        message2 = 'Game Won';
+        message2 = 'Game Won. You are an Explorer';
 
         context.font = '70px ' + gameobj.game.ui.fontFamily;
 
